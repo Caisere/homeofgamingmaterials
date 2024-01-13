@@ -1,0 +1,14 @@
+{
+  "name": "gamingmaterial",
+  "version": "1.0.0",
+  "description": "Landing Page of Home of Gaming Material",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "author": "Caisere",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
