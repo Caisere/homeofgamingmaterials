@@ -3,8 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  font-size: 16px;
-}
+  font-size: 16px; }
 
 .container {
   width: 100%;
@@ -12,8 +11,7 @@
   padding-left: 8%;
   padding-right: 8%;
   overflow: hidden;
-  /*background-color: plum;*/
-}
+  /*background-color: plum;*/ }
 
 /*.container-1 {
   width: 100%;
@@ -26,49 +24,41 @@
 .navbar {
   width: 100%;
   display: flex;
-  align-items: center;
-}
+  align-items: center; }
 
 .logo {
   width: 50px;
   cursor: pointer;
-  margin: 30px 0;
-}
+  margin: 30px 0; }
 
 .menu__bar {
   width: 25px;
   cursor: pointer;
   margin: 30px 0;
-  display: none;
-}
+  display: none; }
 
 nav {
   flex: 1;
-  text-align: right;
-}
+  text-align: right; }
 
 nav ul li {
   display: inline-block;
-  margin-right: 30px;
-}
+  margin-right: 30px; }
 
 nav ul li a {
   text-decoration: none;
   color: #000;
-  font-size: 0.9rem;
-}
+  font-size: 0.9rem; }
 
 nav ul li a:hover {
-  color: #ff5e2f;
-}
+  color: #ff5e2f; }
 
 .row {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin: 100px 0;
-}
+  margin: 100px 0; }
 
 .row__1::after {
   content: "";
@@ -77,36 +67,30 @@ nav ul li a:hover {
   position: absolute;
   background: linear-gradient(to bottom, #fb469f, #ff6062);
   top: 10px;
-  left: -40px;
-}
+  left: -40px; }
 
 .row__1 {
   flex-basis: 40%;
   position: relative;
-  margin-left: 50px;
-}
+  margin-left: 50px; }
 
 .row__1 h2 {
-  font-size: 3.4rem;
-}
+  font-size: 3.4rem; }
 
 .row__1 h3 {
   font-size: 1.7rem;
   color: #707070;
   font-weight: 100;
-  margin: 20px 0 10px;
-}
+  margin: 20px 0 10px; }
 
 .row__1 p {
   font-size: 1rem;
   color: #b7b7b7;
-  font-weight: 100;
-}
+  font-weight: 100; }
 
 .row__1 h4 {
   margin: 30px 0;
-  font-size: 1.3rem;
-}
+  font-size: 1.3rem; }
 
 button {
   width: 140px;
@@ -117,35 +101,29 @@ button {
   color: #fff;
   background: linear-gradient(to right, #fb5283, #ff3527);
   cursor: pointer;
-  transition: width 0.5s;
-}
+  transition: width 0.5s; }
 
 button img {
   width: 30px;
-  display: none;
-}
+  display: none; }
 
 button:hover {
   width: 160px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
+  justify-content: space-between; }
 
 button:hover img {
-  display: block;
-}
+  display: block; }
 
 .row__2 {
   position: relative;
   flex-basis: 60%;
   display: flex;
-  align-items: center;
-}
+  align-items: center; }
 
 .row__2 .controller {
-  width: 90%;
-}
+  width: 90%; }
 
 .color-box {
   position: absolute;
@@ -156,39 +134,33 @@ button:hover img {
   height: 100%;
   width: 80%;
   border-radius: 20px 0 0 20px;
-  transform: translateX(150px);
-}
+  transform: translateX(150px); }
 
 .add-btn {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
+  align-items: center; }
 
 .add-btn img {
   width: 35px;
   margin-bottom: 10px;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .add-btn p {
   color: #fff;
   font-size: 0.8rem;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .social__links {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-}
+  text-align: center; }
 
 .social__links img {
   height: 13px;
   margin: 20px;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 @media only screen and (max-width: 700px) {
   nav ul {
@@ -197,74 +169,42 @@ button:hover img {
     position: absolute;
     top: 75px;
     right: 0;
-    z-index: 2;
-  }
-
+    z-index: 2; }
   nav ul li {
     display: block;
     margin-top: 10px;
-    margin-bottom: 5px;
-  }
-
+    margin-bottom: 5px; }
   nav ul li a {
-    color: #fff;
-  }
-
+    color: #fff; }
   nav ul li a:hover {
-    color: #000;
-  }
-
+    color: #000; }
   .menu__bar {
-    display: block;
-  }
-
+    display: block; }
   .row {
     flex-direction: column-reverse;
-    margin: 100px 0;
-  }
-
+    margin: 100px 0; }
   .row__1 {
     flex-basis: 100%;
-    margin-left: 40px;
-  }
-
+    margin-left: 40px; }
   .row__1 h2 {
-    font-size: 2.4rem;
-  }
-
+    font-size: 2.4rem; }
   .row__1 h3 {
-    font-size: 1.2rem;
-  }
-
+    font-size: 1.2rem; }
   .row__1 p {
-    font-size: 0.6rem;
-  }
-
+    font-size: 0.6rem; }
   .row__1 h4 {
-    font-size: 1rem;
-  }
-
+    font-size: 1rem; }
   .row__2 {
     flex-basis: 100%;
-    margin-bottom: 50px;
-  }
-
+    margin-bottom: 50px; }
   .row__2 .controller {
-    width: 80%;
-  }
-
+    width: 80%; }
   .color-box {
-    width: 100%;
-  }
-
+    width: 100%; }
   #menuList {
     overflow: hidden;
-    transition: 0.5s;
-  }
-
+    transition: 0.5s; }
   .row::after {
     top: 200px;
     left: 80px;
-    height: 40%;
-  }
-}
+    height: 40%; } }
