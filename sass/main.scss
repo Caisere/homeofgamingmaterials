@@ -109,6 +109,11 @@ nav ul li a:hover {
   font-size: 1.3rem;
 }
 
+.row__1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
 button {
   width: 140px;
   border: none;
@@ -191,6 +196,47 @@ button:hover img {
   cursor: pointer;
 }
 
+/**.popup__container {
+  height: 100vh;
+  width: 100vw;
+  padding: 5rem;
+  position: relative;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 60%;
+  //background-color: #fb469f;
+  display: flex;
+  padding: 3rem;
+  box-shadow: 2px 2px 5px #000;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.popup__message {
+  display: flex;
+  flex-direction: column;
+}
+
+.login__input {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup form {
+  //flex: 1;
+  //flex-basis: 60%;
+  //height: 90%;
+  padding: 2rem 3rem;
+  border: 1px solid #000;
+}
+*/
 @media only screen and (max-width: 700px) {
   nav ul {
     width: 100%;
