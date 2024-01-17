@@ -8,8 +8,8 @@
 .container {
   width: 100%;
   min-height: 100vh;
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
   overflow: hidden;
   /*background-color: plum;*/ }
 
@@ -24,7 +24,24 @@
 .navbar {
   width: 100%;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #fff;
+  border-bottom: 1px solid #ff5e2f;
+  z-index: 2000; }
+
+.navbar i {
+  margin-top: 26px;
+  cursor: pointer; }
+
+.navbar i:hover {
+  color: #ff5e2f; }
 
 .logo {
   width: 50px;
@@ -34,7 +51,7 @@
 .menu__bar {
   width: 25px;
   cursor: pointer;
-  margin: 30px 0;
+  margin: 35px 0;
   display: none; }
 
 nav {
@@ -58,7 +75,7 @@ nav ul li a:hover {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin: 100px 0; }
+  margin: 120px 0; }
 
 .row__1::after {
   content: "";
@@ -157,14 +174,60 @@ button:hover img {
 
 .social__links {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center; }
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px; }
+
+.social__links a {
+  text-decoration: none;
+  color: lightgrey; }
+
+.social__links a:hover {
+  color: #000; }
 
 .social__links img {
   height: 13px;
-  margin: 20px;
   cursor: pointer; }
+
+.footer {
+  background: linear-gradient(to right, #ff3527, #fb469f);
+  padding: 2% 5%; }
+
+.footer__section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 30px; }
+
+.footer__section h3 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 20px; }
+
+.about__section ul li {
+  list-style: none;
+  margin: 10px 0; }
+
+.about__section ul li a {
+  text-decoration: none;
+  color: lightgrey; }
+
+.about__section ul li a:hover {
+  color: #000; }
+
+.playstation {
+  display: flex;
+  gap: 1rem;
+  align-items: center; }
+
+.playstation i {
+  font-size: 2.5rem;
+  color: #fff; }
+
+.playstation h1 {
+  font-size: 1.5rem;
+  color: #fff; }
 
 /**.popup__container {
   height: 100vh;
@@ -208,6 +271,9 @@ button:hover img {
 }
 */
 @media only screen and (max-width: 700px) {
+  .navbar i {
+    margin-top: -2px;
+    margin-right: 15px; }
   nav ul {
     width: 100%;
     background: linear-gradient(#ff54a2, #ff575a);
@@ -225,12 +291,13 @@ button:hover img {
     color: #000; }
   .menu__bar {
     display: block; }
+  .row__container:not(:first-child) {
+    margin: 210px 0; }
   .row {
-    flex-direction: column-reverse;
-    margin: 100px 0; }
+    flex-direction: column-reverse; }
   .row__1 {
     flex-basis: 100%;
-    margin-left: 40px; }
+    margin-left: 10px; }
   .row__1 h2 {
     font-size: 2.4rem; }
   .row__1 h3 {
@@ -252,4 +319,12 @@ button:hover img {
   .row::after {
     top: 200px;
     left: 80px;
-    height: 40%; } }
+    height: 40%; }
+  .footer {
+    padding: 2rem; }
+  .footer__section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-content: center;
+    row-gap: 1rem;
+    width: 100%; } }
